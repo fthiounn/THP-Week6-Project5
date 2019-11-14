@@ -67,3 +67,8 @@ gem 'table_print'
 gem 'faker'
 gem 'dotenv-rails'
 gem 'devise'
+gem 'stripe'
+gem "aws-sdk-s3", require: false
+gem 'aws-sdk-rails'
+gem 'aws-ses', '~> 0.4.4', require: 'aws/ses'
+

@@ -13,6 +13,16 @@ nb_user = 50
 nb_events = 50
 nb_guests = 200
 
+#creation d'un admin
+Admin.create(
+  first_name: "Francois",
+  last_name: "admin",
+  email: "cerisel146@gmail.com",
+  password: "qwerty")
+downloaded_image = open("https://picsum.photos/200/300")
+user.avatar.attach(io: downloaded_image  , filename: "faker.jpg")
+puts "Seeding of Admin"
+
 
 nb_user.times do |x|
   fname = Faker::Name.first_name
